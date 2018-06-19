@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>infoBIM</title>
+    <link rel="shortcut icon" href="images/content/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header container">
+        <div class="header-row">
+          <div class="header-block__logo"><a class="logo-link" href="#"><img class="logo__img" src="images/content/logo.svg"></a></div>
+          <div class="header-block__menu">
+            <nav class="nav container">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link nav__link-active" href="#">Buyer</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Supplier</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Customers</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Help</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Contact US</a></li>
+                </ul>
+              </nav>
+            </nav>
+          </div>
+          <div class="header-block__btn">
+            <button class="btn btn-sign">Sign in</button>
+          </div>
+        </div>
+      </header>
+      <section class="political">
+        <div class="container">
+          <h1 class="main-title main-title-left">Политика конфидециальности</h1>
+          <div class="political__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          </div>
+        </div>
+      </section>
+      <div class="hamburger"><a class="hamburger__link"><span class="hamburger__link_item"></span></a></div>
+      <div class="hamburger-menu">
+        <nav class="hamburger-menu__nav">
+          <ul class="hamburger-menu__list">
+            <li class="hamburger-menu__item hamburger-menu__item--active"><a class="hamburger-menu__link" href="index.html">Главная</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="services.html">Услуги</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="price.html">Цены</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="gallery.html">Фотогалерея</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="about.html">О нас</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="about.html">Новости</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <script type="template" id="modalFormTemplate">
+        <div class="modal">
+          <div class="modal__form">
+            <div class="modal-form__block">
+              <h2 class="modal__title">Получить бесплатную консультацию</h2>
+              <form class="form form--modal">
+                <div class="form__left">
+                  <div class="form__block form__block-error">
+                    <input class="form__input" type="text" name="form-name" placeholder="Имя"><span class="form__error">Введите правильное имя</span>
+                  </div>
+                  <div class="form__block form__block-error">
+                    <input class="form__input" type="text" name="form-email" placeholder="E-mail"><span class="form__error">Введите правильный e-mail</span>
+                  </div>
+                  <div class="form__block">
+                    <input class="form__input" type="text" name="form-tel" placeholder="Телефон"><span class="form__error">Введите правильный телефон</span>
+                  </div>
+                </div>
+                <div class="form__block form__block-checkbox">
+                  <label class="form__label" for="paySelect1">
+                    <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Согласен" checked>
+                    <div class="form__input-my"></div>
+                    <div class="form__title">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></div>
+                  </label>
+                </div>
+                <button class="btn btn__access" type="button">Отправить</button>
+              </form>
+            </div>
+            <button class="modal__close"></button>
+            <h2 class="modal__title modal__title-acess">Ваша заявка успешно отправлена</h2>
+          </div>
+        </div>
+      </script>
+      <script type="template" id="modalAccessTemplate">
+        <div class="modal">
+          <div class="modal__form">
+            <div class="modal-form__block">
+              <h2 class="modal__title">Ваша заявка успешно отправлена</h2>
+            </div>
+            <button class="modal__close"></button>
+          </div>
+        </div>
+      </script>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-left">
+              <ul class="footer-left__list">
+                <li class="footer-left__item"><a class="footer-left__link" href="#">Главная</a></li>
+                <li class="footer-left__item"><a class="footer-left__link" href="#">Услуги</a></li>
+                <li class="footer-left__item"><a class="footer-left__link" href="#">Цены</a></li>
+                <li class="footer-left__item"><a class="footer-left__link" href="#">Фотоалерея</a></li>
+                <li class="footer-left__item"><a class="footer-left__link" href="#">О нас</a></li>
+                <li class="footer-left__item"><a class="footer-left__link" href="#">Новости</a></li>
+                <li class="footer-left__item"><a class="footer-left__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <div class="footer-right__contact">
+                <div class="footer-right__aress">СПб, Пискарёвский пр. 37 к.2</div>
+                <div class="footer-right__phone"><a class="footer-right__link" href="tel:89531606360">8(953) 160-63-60</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-row">
+            <div class="footer-left">
+              <div class="footer-text">«Северная Охта» © 2018</div>
+            </div>
+            <div class="footer-right">
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item"><a class="social__link social__link_vk1" href="https://vk.com/id309367899" target="_blank">
+                      <svg class="social__link_svg" width="100%" height="100%">
+                        <use xlink:href="images/icons/sprite.svg#vk1"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link social__link_instagram1" href="https://instagram.com/p/BjzcWtdDYez" target="_blank">
+                      <svg class="social__link_svg" width="100%" height="100%">
+                        <use xlink:href="images/icons/sprite.svg#instagram1"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link social__link_telegram1" href="https://t.me/north_ohta" target="_blank">
+                      <svg class="social__link_svg" width="100%" height="100%">
+                        <use xlink:href="images/icons/sprite.svg#telegram1"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link social__link_youtube1" href="https://www.youtube.com/channel/UC6_BxHYXbh1G4n1dh9-zSIg" target="_blank">
+                      <svg class="social__link_svg" width="100%" height="100%">
+                        <use xlink:href="images/icons/sprite.svg#youtube1"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link social__link_fb1" href="https://www.facebook.com/profile.php?id=100026533281311" target="_blank">
+                      <svg class="social__link_svg" width="100%" height="100%">
+                        <use xlink:href="images/icons/sprite.svg#fb1"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

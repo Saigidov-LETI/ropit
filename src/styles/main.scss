@@ -1,0 +1,19 @@
+//config
+@import "config/variable.scss";
+@import "config/mixins.scss";
+
+//resolution
+$tablets: 768px;
+$phones: 667px;
+$phones-xs: 568px;
+
+//base
+@import "layout/font.scss";
+@import "layout/base.scss";
+@import "layout/adjustment.scss";
+
+//section
+@import "section/header.scss";
+@import "section/index.scss";
+@import "section/political.scss";
+@import "section/footer.scss";
