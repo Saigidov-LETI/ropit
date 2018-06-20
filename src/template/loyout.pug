@@ -10,15 +10,16 @@ html(lang='ru')
         title #{title}
         link(rel="shortcut icon" href="images/content/favicon.ico" type="image/png")
         link(rel='stylesheet', href='styles/main.min.css')
+        link(rel='stylesheet', href='styles/owl.carousel.min.css')
         script(src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript")
     body
         .main-wrapper
             include section/header.pug
             block content
 
-            include section/hamburger.pug
-            include section/modal_form.pug
-            include section/modal_access.pug
+            //include section/hamburger.pug
+            //include section/modal_form.pug
+            //include section/modal_access.pug
             include section/footer.pug
 
         script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")

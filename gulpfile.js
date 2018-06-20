@@ -63,6 +63,11 @@ function style() {
         .pipe(gulp.dest(path.style.dest));
 }
 
+function stylelibs() {
+    return gulp.src('./src/styles/*.css')
+        .pipe(gulp.dest(path.style.dest));
+}
+
 // Сборка изображений
 function image() {
     return gulp.src(path.image.src + '**/*.*')
@@ -147,6 +152,7 @@ function clean() {
 // watcher
 function watch() {
     gulp.watch(path.style.src, style);
+    gulp.watch(path.style.src, stylelibs);
     gulp.watch(path.templates.pages, templates);
     gulp.watch(path.image.src, image);
     gulp.watch(path.scripts.src, script);
@@ -162,12 +168,13 @@ function server() {
 
 exports.templates = templates;
 exports.style = style;
+exports.stylelibs = stylelibs;
 exports.image = image;
 exports.script = script;
 exports.clean = clean;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(style, templates, fonts, image, script, svg, scriptLib),
+    gulp.parallel(style, stylelibs, templates, fonts, image, script, svg, scriptLib),
     gulp.parallel(watch, server)
 ));
