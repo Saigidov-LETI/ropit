@@ -1,0 +1,71 @@
+.footer {
+  background-color: $darkBlue;
+  padding: rem(35px) rem(30px);
+  position: absolute;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid $blue;
+  padding-bottom: rem(40px);
+  @include phones {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-top__block {
+  padding: 0 rem(25px);
+  &:nth-child(1) {
+    padding-left: 0;
+  }
+  @include phones {
+    padding: 0 rem(25px) 0 0;
+  }
+}
+
+.footer-top__list {
+  @include phones {
+    display: none;
+  }
+}
+
+.footer-title__link {
+  font-family: 'ProximaNova';
+  font-weight: 700;
+  @include font-size(16px);
+  color: $white;
+  transition: color .3s;
+  padding-bottom: rem(5px);
+  &:hover {
+    color: $blue;
+  }
+}
+
+.footer-top__link {
+  font-family: 'ProximaNova';
+  font-weight: 500;
+  @include font-size(14px);
+  color: $white;
+  line-height: 2;
+  transition: color .3s;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.footer-bottom {
+  font-family: 'ProximaNova';
+  font-weight: 100;
+  @include font-size(14px);
+  color: $white;
+  padding-top: rem(10px);
+}
+
+
+
+
+
+

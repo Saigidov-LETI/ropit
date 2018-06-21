@@ -20,7 +20,14 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item"><a class="nav__link nav__link-active" href="#">Buyer</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#">Supplier</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Supplier</a>
+                    <ul class="nav-drop__list">
+                      <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
+                      <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
+                      <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT company</a></li>
+                      <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
+                    </ul>
+                  </li>
                   <li class="nav__item"><a class="nav__link" href="#">Customers</a></li>
                   <li class="nav__item"><a class="nav__link" href="#">About</a></li>
                   <li class="nav__item"><a class="nav__link" href="#">Help</a></li>
@@ -43,7 +50,19 @@
           </div>
         </div>
       </section>
-      <!--include section/hamburger.pug-->
+      <div class="hamburger"><a class="hamburger__link"><span class="hamburger__link_item"></span></a></div>
+      <div class="hamburger-menu">
+        <nav class="hamburger-menu__nav">
+          <ul class="hamburger-menu__list">
+            <li class="hamburger-menu__item hamburger-menu__item--active"><a class="hamburger-menu__link" href="">Buyer</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Supplier</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Customers</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">About</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Help</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Contact US</a></li>
+          </ul>
+        </nav>
+      </div>
       <!--include section/modal_form.pug-->
       <!--include section/modal_access.pug-->
       <footer class="footer">
@@ -81,7 +100,11 @@
           </div>
           <div class="footer-top__block">
             <div class="footer-title"><a class="footer-title__link">About</a></div>
+          </div>
+          <div class="footer-top__block">
             <div class="footer-title"><a class="footer-title__link">Help</a></div>
+          </div>
+          <div class="footer-top__block">
             <div class="footer-title"><a class="footer-title__link">Contact US</a></div>
           </div>
         </div>
