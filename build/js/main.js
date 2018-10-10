@@ -6,10 +6,11 @@ $(document).ready(function(){
         dots: true
     });
 
+		// Бургер меню
     function burger(){
 		const   hamburgerBtn = document.querySelector('.hamburger'),
-				hamburgerItem = document.querySelectorAll('.hamburger-menu__link'),
-				hamburgerMenu = document.querySelector('.hamburger-menu');
+						hamburgerItem = document.querySelectorAll('.hamburger-menu__link'),
+						hamburgerMenu = document.querySelector('.hamburger-menu');
 
 
 		hamburgerBtn.addEventListener('click', function(){
@@ -36,5 +37,39 @@ $(document).ready(function(){
 
 		});
 	}
-    burger();
+	burger();
+	
+	// Рассчет высоты формы регистрации и переходы
+	function formBlockHeight() {
+		var 	formBlock = document.querySelectorAll('.form-block'),
+					regSection = document.querySelector('.reg-section'),
+					btnNext = document.querySelector('.reg-bottom__next'),
+					btnBack = document.querySelector('.reg-bottom__back'),
+					regItemUser = document.querySelector('.reg-item--user'),
+					regItemCompany = document.querySelector('.reg-item--company'),
+					maxHeight = 0;
+	
+		for(var i = 0; i < formBlock.length; i++){
+			
+			var elemHeight = formBlock[i].offsetHeight;
+			if(elemHeight > maxHeight){
+				maxHeight = elemHeight + 200;
+			}
+		}
+
+		regSection.style.height = maxHeight + 'px';
+		
+		btnNext.addEventListener('click', () => {
+			regItemUser.classList.remove('active');
+			regItemCompany.classList.add('active');
+		});
+
+		btnBack.addEventListener('click', ()=>{
+			regItemCompany.classList.remove('active');
+			regItemUser.classList.add('active');
+		});
+		
+	}
+
+	formBlockHeight();
 });

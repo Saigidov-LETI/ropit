@@ -32,6 +32,7 @@
   background-color: $red;
   color: $white;
   padding:rem(10px) rem(25px);
+  margin: 0 rem(5px);
   border-radius: 3px;
   font-family: 'ProximaNova';
   font-weight: 300;
@@ -42,6 +43,20 @@
   &:hover {
     background-color: $blue;
     transition: background-color 0.4s;
+  }
+  &.btn-blue {
+    background-color: $blue;
+    &:hover {
+      background-color: $darkBlue;
+      transition: background-color 0.4s;
+    }
+  }
+  &.btn-grey {
+    background-color: $darkGrey;
+    &:hover {
+      background-color: $darkGrey/1.5;
+      transition: background-color 0.4s;
+    }
   }
 }
 
@@ -64,4 +79,8 @@
   @include font-size(18px);
   color: $darkBlue;
   margin-bottom: rem(10px);
+}
+
+.section-title {
+  padding-bottom: rem(30px);
 }
