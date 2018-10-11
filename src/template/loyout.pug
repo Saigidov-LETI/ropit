@@ -18,9 +18,31 @@ html(lang='ru')
             block content
 
             include section/hamburger.pug
-            //include section/modal_form.pug
-            //include section/modal_access.pug
             include section/footer.pug
+            //- include section/modal_sign.pug
+            script(type="template" id="modalSignTemplate")
+                .modal
+                    .modal__form
+                        //- добавить класс .modal-form__block--error для отображения инфы об ошибке
+                        .modal-form__block
+                            h2.modal__title Sign In
+                            .error-message Data entry error
+                            form.form-sign
+                                label.form-sign__label
+                                    .form-sign__name Login
+                                    input.form__input(type="text" name="" placeholder="Login")
+                                label.form-sign__label
+                                    .form-sign__name Password
+                                    input.form__input(type="password" name="" placeholder="Login")
+                                label.form-sign__remember(for="RememberMe")
+                                    input.check-input#RememberMe(type="checkbox")
+                                    .input-my-checkbox
+                                    .form-sign__text Remember me
+                                .form-sign__button
+                                    .btn.btn-red.form-sign__btn-underline Log In
+                                    .btn.btn-blue Registration
+                                    a.form-sign__link.form-sign__text(href="#") Forgot your password?
+                        .modal__close 
 
         script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
         script(type="text/javascript" src="js/owl.carousel.min.js")

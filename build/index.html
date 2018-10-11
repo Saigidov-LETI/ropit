@@ -134,8 +134,6 @@
           </ul>
         </nav>
       </div>
-      <!--include section/modal_form.pug-->
-      <!--include section/modal_access.pug-->
       <footer class="footer">
         <div class="footer-top">
           <div class="footer-top__block">
@@ -181,6 +179,36 @@
         </div>
         <div class="footer-bottom">Copyright © 2018 ROPIT. All rights reserved.</div>
       </footer>
+      <script type="template" id="modalSignTemplate">
+        <div class="modal">
+          <div class="modal__form">
+            <div class="modal-form__block">
+              <h2 class="modal__title">Sign In</h2>
+              <div class="error-message">Data entry error</div>
+              <form class="form-sign">
+                <label class="form-sign__label">
+                  <div class="form-sign__name">Login</div>
+                  <input class="form__input" type="text" name="" placeholder="Login">
+                </label>
+                <label class="form-sign__label">
+                  <div class="form-sign__name">Password</div>
+                  <input class="form__input" type="password" name="" placeholder="Login">
+                </label>
+                <label class="form-sign__remember" for="RememberMe">
+                  <input class="check-input" id="RememberMe" type="checkbox">
+                  <div class="input-my-checkbox"></div>
+                  <div class="form-sign__text">Remember me</div>
+                </label>
+                <div class="form-sign__button">
+                  <div class="btn btn-red form-sign__btn-underline">Log In</div>
+                  <div class="btn btn-blue">Registration</div><a class="form-sign__link form-sign__text" href="#">Forgot your password?</a>
+                </div>
+              </form>
+            </div>
+            <div class="modal__close"> </div>
+          </div>
+        </div>
+      </script>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>

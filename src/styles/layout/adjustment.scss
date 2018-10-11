@@ -32,7 +32,6 @@
   background-color: $red;
   color: $white;
   padding:rem(10px) rem(25px);
-  margin: 0 rem(5px);
   border-radius: 3px;
   font-family: 'ProximaNova';
   font-weight: 300;
@@ -40,6 +39,8 @@
   transition: background-color 0.4s;
   outline:none;
   border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
   &:hover {
     background-color: $blue;
     transition: background-color 0.4s;

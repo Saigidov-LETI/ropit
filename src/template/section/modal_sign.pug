@@ -1,0 +1,21 @@
+script(type="template" id="modalSignTemplate")
+    .modal
+        .modal__form
+            .modal-form__block
+                h2.modal__title Sign In
+                form.form-sign
+                  label.form-sign__label
+                    .form-sign__name Login
+                    input.form__input(type="text" name="" placeholder="Login")
+                  label.form-sign__label
+                    .form-sign__name Password
+                    input.form__input(type="password" name="" placeholder="Login")
+                  .form-sign__remember
+                    input.check-input#RememberMe(type="checkbox")
+                    .input-my-checkbox
+                    .form-sign__text Remember me
+                  .form-sign__button
+                    .btn.btn-red Log In
+                    .btn.btn-blue Registration
+                    .form-sign__text Remember me
+          .modal-close close

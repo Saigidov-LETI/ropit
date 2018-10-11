@@ -48,37 +48,46 @@
           <h2 class="section-title">Registration</h2>
           <div class="reg">
             <ul class="reg-list">
-              <li class="reg-item reg-item--user active"><a class="reg-item__link">User info</a>
+              <li class="reg-item reg-item--user reg-item--error active"><a class="reg-item__link">User info</a>
                 <div class="form-block">
+                  <div class="error-message">You entered incorrect data or did not enter the necessary data</div>
                   <div class="reg-form__top reg-form__top--flex">
                     <div class="reg-form__col">
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">Title</div>
-                        <input class="reg-form__input" type="text">
+                        <div class="reg-form__name">Title <span class="red-star">*</span></div>
+                        <select class="form-user__select" name="userTitle" value="">
+                          <option class="form-user__option">MR</option>
+                          <option class="form-user__option">MS</option>
+                          <option class="form-user__option">MISS</option>
+                          <option class="form-user__option">MRS</option>
+                          <option class="form-user__option">DR</option>
+                          <option class="form-user__option">CPTN</option>
+                          <option class="form-user__option">PROF</option>
+                        </select>
                       </label>
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">First Name</div>
-                        <input class="reg-form__input" type="text">
+                        <div class="reg-form__name">First Name <span class="red-star">*</span></div>
+                        <input class="reg-form__input reg-form__input--error" type="text">
                       </label>
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">Last Name</div>
+                        <div class="reg-form__name">Last Name <span class="red-star">*</span></div>
                         <input class="reg-form__input" type="text">
                       </label>
                     </div>
                     <div class="reg-form__col">
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">E-mail</div>
+                        <div class="reg-form__name">E-mail <span class="red-star">*</span></div>
                         <input class="reg-form__input" type="text">
                       </label>
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">Password</div>
+                        <div class="reg-form__name">Password <span class="red-star">*</span></div>
                         <div class="reg-form__input-block">
                           <input class="reg-form__input" type="text">
                           <div class="reg-form__prompt">**Your password must be at least 6 characters and should ideally include both letters and numbers</div>
                         </div>
                       </label>
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">Confirm Password</div>
+                        <div class="reg-form__name">Confirm Password <span class="red-star">*</span></div>
                         <div class="reg-form__input-block">
                           <input class="reg-form__input" type="text">
                           <div class="reg-form__prompt">**Please confirm your password by entering it again</div>
@@ -87,7 +96,7 @@
                     </div>
                     <div class="reg-form__col">
                       <label class="reg-form__block" for="">
-                        <div class="reg-form__name">Type of profile</div>
+                        <div class="reg-form__name">Type of profile <span class="red-star">*</span></div>
                         <select class="form-user__select" name="typeProfile" value="">
                           <option class="form-user__option">Profile 1</option>
                           <option class="form-user__option">Profile 2</option>
@@ -101,8 +110,8 @@
                     <div class="reg-bottom__left">
                       <div class="reg-bottom__text">* In future you will be asked for your corporate e-mail adress and password to login this website</div>
                       <label class="reg-form__check-block" for="chekCompany">
-                        <input class="reg-form__check-input" id="chekCompany" type="checkbox">
-                        <div class="reg-form__input-my"></div>
+                        <input class="check-input" id="chekCompany" type="checkbox">
+                        <div class="input-my-checkbox"></div>
                         <div class="reg-form__name reg-form__name--check">My company already haved account on this website</div>
                       </label>
                     </div>
@@ -114,47 +123,48 @@
               </li>
               <li class="reg-item reg-item--company"><a class="reg-item__link">Company info</a>
                 <div class="form-block">
+                  <div class="error-message">You entered incorrect data or did not enter the necessary data</div>
                   <form class="reg-form">
                     <div class="reg-form__top">
                       <div class="reg-form__row">
                         <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Company name</div>
+                          <div class="reg-form__name">Company name <span class="red-star">*</span></div>
                           <input class="reg-form__input" type="text">
                         </label>
                         <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Adress 1</div>
+                          <div class="reg-form__name">Adress 1 <span class="red-star">*</span></div>
                           <input class="reg-form__input" type="text">
                         </label>
                         <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Phone number</div>
-                          <input class="reg-form__input" type="text">
-                        </label>
-                      </div>
-                      <div class="reg-form__row">
-                        <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Country</div>
-                          <input class="reg-form__input" type="text">
-                        </label>
-                        <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Adress 2</div>
-                          <input class="reg-form__input" type="text">
-                        </label>
-                        <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Web site</div>
+                          <div class="reg-form__name">Phone number <span class="red-star">*</span></div>
                           <input class="reg-form__input" type="text">
                         </label>
                       </div>
                       <div class="reg-form__row">
                         <label class="reg-form__block" for="">
-                          <div class="reg-form__name">City</div>
+                          <div class="reg-form__name">Country <span class="red-star">*</span></div>
                           <input class="reg-form__input" type="text">
                         </label>
                         <label class="reg-form__block" for="">
-                          <div class="reg-form__name">ZIP / Post code</div>
+                          <div class="reg-form__name">Adress 2 <span class="red-star">*</span></div>
                           <input class="reg-form__input" type="text">
                         </label>
                         <label class="reg-form__block" for="">
-                          <div class="reg-form__name">Number of vessels</div>
+                          <div class="reg-form__name">Web site <span class="red-star">*</span></div>
+                          <input class="reg-form__input" type="text">
+                        </label>
+                      </div>
+                      <div class="reg-form__row">
+                        <label class="reg-form__block" for="">
+                          <div class="reg-form__name">City <span class="red-star">*</span></div>
+                          <input class="reg-form__input" type="text">
+                        </label>
+                        <label class="reg-form__block" for="">
+                          <div class="reg-form__name">ZIP / Post code <span class="red-star">*</span></div>
+                          <input class="reg-form__input" type="text">
+                        </label>
+                        <label class="reg-form__block" for="">
+                          <div class="reg-form__name">Number of vessels <span class="red-star">*</span></div>
                           <input class="reg-form__input" type="text">
                         </label>
                       </div>
@@ -164,131 +174,131 @@
                       <div class="reg-form__check">
                         <div class="reg-form__col">
                           <label class="reg-form__check-block" for="chekInput1">
-                            <input class="reg-form__check-input" id="chekInput1" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput1" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Bardes</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput2">
-                            <input class="reg-form__check-input" id="chekInput2" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput2" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Chemical Carriers</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput3">
-                            <input class="reg-form__check-input" id="chekInput3" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput3" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Container liner</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput4">
-                            <input class="reg-form__check-input" id="chekInput4" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput4" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">FPSO</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput5">
-                            <input class="reg-form__check-input" id="chekInput5" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput5" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Heavy lift</div>
                           </label>
                         </div>
                         <div class="reg-form__col">
                           <label class="reg-form__check-block" for="chekInput6">
-                            <input class="reg-form__check-input" id="chekInput6" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput6" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">LPG</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput7">
-                            <input class="reg-form__check-input" id="chekInput7" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput7" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Refer</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput8">
-                            <input class="reg-form__check-input" id="chekInput8" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput8" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Seismic</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput9">
-                            <input class="reg-form__check-input" id="chekInput9" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput9" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Coastal</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput10">
-                            <input class="reg-form__check-input" id="chekInput10" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput10" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Cruise</div>
                           </label>
                         </div>
                         <div class="reg-form__col">
                           <label class="reg-form__check-block" for="chekInput11">
-                            <input class="reg-form__check-input" id="chekInput11" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput11" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Ferries</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput12">
-                            <input class="reg-form__check-input" id="chekInput12" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput12" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Hospital Ship</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput13">
-                            <input class="reg-form__check-input" id="chekInput13" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput13" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">OSV</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput14">
-                            <input class="reg-form__check-input" id="chekInput14" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput14" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Reserch</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput15">
-                            <input class="reg-form__check-input" id="chekInput15" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput15" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Speciality</div>
                           </label>
                         </div>
                         <div class="reg-form__col">
                           <label class="reg-form__check-block" for="chekInput16">
-                            <input class="reg-form__check-input" id="chekInput16" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput16" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Tugboat</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput17">
-                            <input class="reg-form__check-input" id="chekInput17" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput17" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Car carrier</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput18">
-                            <input class="reg-form__check-input" id="chekInput18" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput18" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Container feeder</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput19">
-                            <input class="reg-form__check-input" id="chekInput19" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput19" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">General Cargo</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput20">
-                            <input class="reg-form__check-input" id="chekInput20" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput20" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">LNG</div>
                           </label>
                         </div>
                         <div class="reg-form__col">
                           <label class="reg-form__check-block" for="chekInput21">
-                            <input class="reg-form__check-input" id="chekInput21" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput21" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Offshore drilling rigs</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput22">
-                            <input class="reg-form__check-input" id="chekInput22" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput22" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">RoRo</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput23">
-                            <input class="reg-form__check-input" id="chekInput23" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput23" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Tankers</div>
                           </label>
                           <label class="reg-form__check-block" for="chekInput24">
-                            <input class="reg-form__check-input" id="chekInput24" type="checkbox">
-                            <div class="reg-form__input-my"></div>
+                            <input class="check-input" id="chekInput24" type="checkbox">
+                            <div class="input-my-checkbox"></div>
                             <div class="reg-form__name reg-form__name--check">Yatcht</div>
                           </label>
                         </div>
@@ -297,17 +307,17 @@
                     <div class="reg-form__bottom">
                       <div class="reg-bottom__left">
                         <label class="reg-form__check-block" for="chekPolicy">
-                          <input class="reg-form__check-input" id="chekPolicy" type="checkbox">
-                          <div class="reg-form__input-my"></div>
+                          <input class="check-input" id="chekPolicy" type="checkbox">
+                          <div class="input-my-checkbox"></div>
                           <div class="reg-form__name reg-form__name--check">I have read and agree with terms of use and privacy policy</div>
                         </label>
                         <label class="reg-form__check-block" for="chekEmail">
-                          <input class="reg-form__check-input" id="chekEmail" type="checkbox">
-                          <div class="reg-form__input-my"></div>
+                          <input class="check-input" id="chekEmail" type="checkbox">
+                          <div class="input-my-checkbox"></div>
                           <div class="reg-form__name reg-form__name--check">I want to receive all the latest news from ROPIT by e-mail</div>
                         </label>
                       </div>
-                      <div class="reg-bottom__right">
+                      <div class="reg-bottom__right reg-bottom__right--double">
                         <button class="btn btn-grey reg-bottom__back" type="button">Previous Step</button>
                         <button class="btn btn-blue" type="button">Register me</button>
                       </div>
@@ -333,8 +343,6 @@
           </ul>
         </nav>
       </div>
-      <!--include section/modal_form.pug-->
-      <!--include section/modal_access.pug-->
       <footer class="footer">
         <div class="footer-top">
           <div class="footer-top__block">
@@ -380,6 +388,36 @@
         </div>
         <div class="footer-bottom">Copyright © 2018 ROPIT. All rights reserved.</div>
       </footer>
+      <script type="template" id="modalSignTemplate">
+        <div class="modal">
+          <div class="modal__form">
+            <div class="modal-form__block">
+              <h2 class="modal__title">Sign In</h2>
+              <div class="error-message">Data entry error</div>
+              <form class="form-sign">
+                <label class="form-sign__label">
+                  <div class="form-sign__name">Login</div>
+                  <input class="form__input" type="text" name="" placeholder="Login">
+                </label>
+                <label class="form-sign__label">
+                  <div class="form-sign__name">Password</div>
+                  <input class="form__input" type="password" name="" placeholder="Login">
+                </label>
+                <label class="form-sign__remember" for="RememberMe">
+                  <input class="check-input" id="RememberMe" type="checkbox">
+                  <div class="input-my-checkbox"></div>
+                  <div class="form-sign__text">Remember me</div>
+                </label>
+                <div class="form-sign__button">
+                  <div class="btn btn-red form-sign__btn-underline">Log In</div>
+                  <div class="btn btn-blue">Registration</div><a class="form-sign__link form-sign__text" href="#">Forgot your password?</a>
+                </div>
+              </form>
+            </div>
+            <div class="modal__close"> </div>
+          </div>
+        </div>
+      </script>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>

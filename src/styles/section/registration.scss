@@ -44,6 +44,19 @@
   background-color: #eef1ff;
   padding: rem(25px) rem(35px);
 }
+.error-message {
+  display: none;
+  background-color: $red;
+  border-radius: 3px;
+  width: 100%;
+  padding: rem(10px) rem(15px);
+  color: $white;
+}
+.reg-item--error {
+  .error-message {
+    display: block;
+  }
+}
 
 .reg-form__top {
   padding-bottom: rem(20px);
@@ -85,6 +98,11 @@
   flex: 1;
 }
 
+.red-star {
+  color: $red;
+  @include font-size(22px);
+}
+
 .reg-form__name {
   margin-bottom: rem(3px);
   &.reg-form__name--check {
@@ -107,17 +125,21 @@
   flex: 1;
 }
 
+.reg-form__input--error {
+  border: 1px solid $red;
+}
+
 .reg-form__check-block {
   display: flex;
   position: relative;
 }
 
-.reg-form__check-input {
+.check-input {
   position: absolute;
   left: -99999999999px;
 }
 
-.reg-form__input-my {
+.input-my-checkbox {
   width: 15px;
   height: 15px;
   background-color: $white;
@@ -126,7 +148,7 @@
   margin-top: 3px;
 }
 
-.reg-form__check-input:checked + .reg-form__input-my:after{
+.check-input:checked + .input-my-checkbox:after{
   content: "";
   height: 8px;
   width: 11px;
@@ -201,6 +223,10 @@
 
 .reg-bottom__right {
   display: flex;
+  &.reg-bottom__right--double {
+    width: 35%;
+    justify-content: space-between;
+  }
 }
 
 .reg-bottom__text {
