@@ -61,6 +61,24 @@ $(document).ready(function(){
 
 		burger();
 		
+		// Показать или скрыть сайдбар
+		function asideShow(){
+			const asideBurgerBtn 	= document.querySelector('.aside-burger__link'),
+						aside			 			= document.querySelector('.aside');
+
+			asideBurgerBtn.addEventListener('click', ()=>{
+				
+				if(aside.classList.contains('aside--active')){
+					aside.classList.remove('aside--active');
+				} else {
+					aside.classList.add('aside--active');
+				}
+			});
+		}
+
+		asideShow();
+
+
 		// Рассчет высоты формы регистрации и переходы
 		function formBlockHeight() {
 			var 	formBlock = document.querySelectorAll('.form-block'),
@@ -94,5 +112,6 @@ $(document).ready(function(){
 		}
 
 		formBlockHeight();
+
 
 });

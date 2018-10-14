@@ -4,6 +4,9 @@
 
 .reg {
   width: 80%;
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .reg-list {

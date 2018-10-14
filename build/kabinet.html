@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href="images/content/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="header-wrap">
+        <header class="header container">
+          <div class="header-row">
+            <div class="header-block__logo"><a class="logo-link" href="#"><img class="logo__img" src="images/content/logo.svg"></a></div>
+            <div class="header-block__menu">
+              <nav class="nav container">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link nav__link-active" href="#">Buyer</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Supplier</a>
+                      <ul class="nav-drop__list">
+                        <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
+                        <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
+                        <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT company</a></li>
+                        <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Customers</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Help</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contact US</a></li>
+                  </ul>
+                </nav>
+              </nav>
+            </div>
+            <div class="header-block__btn">
+              <button class="btn btn-sign">Sign in</button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <section class="personal-area">
+        <aside class="aside">
+          <div class="aside-burger"><a class="aside-burger__link"> <span class="aside-burger__line"></span></a></div>
+          <ul class="aside__list">
+            <li class="aside__item"> <a class="aside__link">
+                  Orders 
+                <svg class="aside__svg">
+                  <use xlink:href="images/icons/sprite.svg#note"> </use>
+                </svg></a>
+              <ul class="aside__sublist">
+                <li class="aside__subitem"> <a class="aside__sublink aside__sublink--active">Inbox</a></li>
+                <li class="aside__subitem"> <a class="aside__sublink">Important</a></li>
+                <li class="aside__subitem"> <a class="aside__sublink">Fraft</a></li>
+                <li class="aside__subitem"> <a class="aside__sublink">Sent</a></li>
+                <li class="aside__subitem"> <a class="aside__sublink">All post</a></li>
+              </ul>
+            </li>
+            <li class="aside__item"> <a class="aside__link">
+                 Catalogs
+                <svg class="aside__svg">
+                  <use xlink:href="images/icons/sprite.svg#note"> </use>
+                </svg></a></li>
+            <li class="aside__item"> <a class="aside__link">
+                 Menu
+                <svg class="aside__svg">
+                  <use xlink:href="images/icons/sprite.svg#note"> </use>
+                </svg></a></li>
+            <li class="aside__item"> <a class="aside__link">
+                 Menu
+                <svg class="aside__svg">
+                  <use xlink:href="images/icons/sprite.svg#note"> </use>
+                </svg></a></li>
+            <li class="aside__item"> <a class="aside__link">Settings
+                <svg class="aside__svg">
+                  <use xlink:href="images/icons/sprite.svg#settings"> </use>
+                </svg></a></li>
+          </ul>
+        </aside>
+        <div class="application">
+          <div class="application-top">
+            <div class="application-top__control">
+              <ul class="control-list">
+                <li class="control-item"><a class="control-link"></a></li>
+                <li class="control-item"><a class="control-link"></a></li>
+                <li class="control-item"><a class="control-link"></a></li>
+                <li class="control-item"><a class="control-link"></a></li>
+                <li class="control-item"><a class="control-link"></a></li>
+                <li class="control-item"><a class="control-link"></a></li>
+              </ul>
+            </div>
+            <div class="application-top__user">
+              <div class="person">
+                <div class="person__content">
+                  <div class="person__name"></div>
+                  <div class="person__company"></div>
+                </div>
+                <div class="person__avatar"><img class="person__img" src=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="application-bottom">
+            <div class="direction">
+              <div class="filter">
+                <div class="filter__item">All orders</div>
+                <div class="filter__item">Open orders</div>
+              </div>
+              <div class="search">
+                <input class="search__input" type="text">
+                <button class="btn">Search</button>
+              </div>
+            </div>
+            <div class="bid">
+              <div class="bid-item">
+                <div class="bid-item__status"></div>
+                <div class="bid-item__rfq"></div>
+                <div class="bid-item__subject"></div>
+                <div class="bid-item__vessel"></div>
+                <div class="bid-item__buyer"></div>
+                <div class="bid-item__customer"></div>
+                <div class="bid-item__date"></div>
+              </div>
+              <div class="bid-item">
+                <div class="bid-item__status"></div>
+                <div class="bid-item__rfq"></div>
+                <div class="bid-item__subject"></div>
+                <div class="bid-item__vessel"></div>
+                <div class="bid-item__buyer"></div>
+                <div class="bid-item__customer"></div>
+                <div class="bid-item__date"></div>
+              </div>
+              <div class="bid-item">
+                <div class="bid-item__status"></div>
+                <div class="bid-item__rfq"></div>
+                <div class="bid-item__subject"></div>
+                <div class="bid-item__vessel"></div>
+                <div class="bid-item__buyer"></div>
+                <div class="bid-item__customer"></div>
+                <div class="bid-item__date"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="hamburger"><a class="hamburger__link"><span class="hamburger__link_item"></span></a></div>
+      <div class="hamburger-menu">
+        <nav class="hamburger-menu__nav">
+          <ul class="hamburger-menu__list">
+            <li class="hamburger-menu__item hamburger-menu__item--active"><a class="hamburger-menu__link" href="">Buyer</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Supplier</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Customers</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">About</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Help</a></li>
+            <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="">Contact US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">Buyer</a></div>
+            <ul class="footer-top__list">
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">Supplier</a></div>
+            <ul class="footer-top__list">
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">Customers</a></div>
+            <ul class="footer-top__list">
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">About</a></div>
+            <ul class="footer-top__list">
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="">Something</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">About</a></div>
+          </div>
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">Help</a></div>
+          </div>
+          <div class="footer-top__block">
+            <div class="footer-title"><a class="footer-title__link">Contact US</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">Copyright © 2018 ROPIT. All rights reserved.</div>
+      </footer>
+      <script type="template" id="modalSignTemplate">
+        <div class="modal">
+          <div class="modal__form">
+            <div class="modal-form__block">
+              <h2 class="modal__title">Sign In</h2>
+              <div class="error-message">Data entry error</div>
+              <form class="form-sign">
+                <label class="form-sign__label">
+                  <div class="form-sign__name">Login</div>
+                  <input class="form__input" type="text" name="" placeholder="Login">
+                </label>
+                <label class="form-sign__label">
+                  <div class="form-sign__name">Password</div>
+                  <input class="form__input" type="password" name="" placeholder="Login">
+                </label>
+                <label class="form-sign__remember" for="RememberMe">
+                  <input class="check-input" id="RememberMe" type="checkbox">
+                  <div class="input-my-checkbox"></div>
+                  <div class="form-sign__text">Remember me</div>
+                </label>
+                <div class="form-sign__button">
+                  <div class="btn btn-red form-sign__btn-underline">Log In</div>
+                  <div class="btn btn-blue">Registration</div><a class="form-sign__link form-sign__text" href="#">Forgot your password?</a>
+                </div>
+              </form>
+            </div>
+            <div class="modal__close"> </div>
+          </div>
+        </div>
+      </script>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

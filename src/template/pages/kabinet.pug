@@ -1,0 +1,104 @@
+extends ../loyout
+
+block variables
+    - var title= "Личный кабинет"
+
+block content
+  section.personal-area
+    aside.aside
+      .aside-burger
+        a.aside-burger__link 
+          span.aside-burger__line
+      ul.aside__list
+        li.aside__item 
+          a.aside__link 
+            |  Orders 
+            svg.aside__svg
+              use(xlink:href="images/icons/sprite.svg#note") 
+          ul.aside__sublist
+            li.aside__subitem 
+              a.aside__sublink.aside__sublink--active Inbox
+            li.aside__subitem 
+              a.aside__sublink Important
+            li.aside__subitem 
+              a.aside__sublink Fraft
+            li.aside__subitem 
+              a.aside__sublink Sent
+            li.aside__subitem 
+              a.aside__sublink All post
+        li.aside__item 
+          a.aside__link 
+            | Catalogs
+            svg.aside__svg
+              use(xlink:href="images/icons/sprite.svg#note") 
+        li.aside__item 
+          a.aside__link 
+            | Menu
+            svg.aside__svg
+              use(xlink:href="images/icons/sprite.svg#note") 
+        li.aside__item 
+          a.aside__link 
+            | Menu
+            svg.aside__svg
+              use(xlink:href="images/icons/sprite.svg#note") 
+        li.aside__item 
+          a.aside__link
+            | Settings
+            svg.aside__svg
+              use(xlink:href="images/icons/sprite.svg#settings") 
+    .application
+      .application-top
+        .application-top__control
+          ul.control-list
+            li.control-item
+              a.control-link
+            li.control-item
+              a.control-link
+            li.control-item
+              a.control-link
+            li.control-item
+              a.control-link
+            li.control-item
+              a.control-link
+            li.control-item
+              a.control-link
+        .application-top__user
+          .person
+            .person__content
+              .person__name
+              .person__company
+            .person__avatar
+              img.person__img(src="")
+      .application-bottom
+        .direction
+          .filter
+            .filter__item All orders
+            .filter__item Open orders
+          .search
+            input.search__input(type="text")
+            button.btn Search
+        .bid
+          .bid-item
+            .bid-item__status
+            .bid-item__rfq
+            .bid-item__subject
+            .bid-item__vessel
+            .bid-item__buyer
+            .bid-item__customer
+            .bid-item__date
+          .bid-item
+            .bid-item__status
+            .bid-item__rfq
+            .bid-item__subject
+            .bid-item__vessel
+            .bid-item__buyer
+            .bid-item__customer
+            .bid-item__date
+          .bid-item
+            .bid-item__status
+            .bid-item__rfq
+            .bid-item__subject
+            .bid-item__vessel
+            .bid-item__buyer
+            .bid-item__customer
+            .bid-item__date
