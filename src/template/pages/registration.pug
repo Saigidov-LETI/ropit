@@ -11,213 +11,214 @@ block content
         ul.reg-list
           li.reg-item.reg-item--user.reg-item--error.active
             a.reg-item__link User info
-            .form-block
-              .error-message You entered incorrect data or did not enter the necessary data
-              .reg-form__top.reg-form__top--flex
-                .reg-form__col
-                  label.reg-form__block(for="")
-                    .reg-form__name Title #[span.red-star *]
-                    select.form-user__select(name="userTitle" value="")
-                        //- option.form-user__option(selected) 
-                        option.form-user__option MR
-                        option.form-user__option MS
-                        option.form-user__option MISS
-                        option.form-user__option MRS
-                        option.form-user__option DR
-                        option.form-user__option CPTN
-                        option.form-user__option PROF
-                  label.reg-form__block(for="")
-                    .reg-form__name First Name #[span.red-star *]
-                    input.reg-form__input.reg-form__input--error(type="text")
-                  label.reg-form__block(for="")
-                    .reg-form__name Last Name #[span.red-star *]
-                    input.reg-form__input(type="text")
-                .reg-form__col
-                  label.reg-form__block(for="")
-                    .reg-form__name E-mail #[span.red-star *]
-                    input.reg-form__input(type="text")
-                  label.reg-form__block(for="")
-                    .reg-form__name Password #[span.red-star *]
-                    .reg-form__input-block
-                      input.reg-form__input(type="text")
-                      .reg-form__prompt **Your password must be at least 6 characters and should ideally include both letters and numbers
-                  label.reg-form__block(for="")
-                    .reg-form__name Confirm Password #[span.red-star *]
-                    .reg-form__input-block
-                      input.reg-form__input(type="text")
-                      .reg-form__prompt **Please confirm your password by entering it again
-                .reg-form__col
-                  label.reg-form__block(for="")
-                    .reg-form__name Type of profile #[span.red-star *]
-                    select.form-user__select(name="typeProfile" value="")
-                      //- option.form-user__option(selected) 
-                      option.form-user__option Profile 1
-                      option.form-user__option Profile 2
-                      option.form-user__option Profile 3
-                      option.form-user__option Profile 4
-              .reg-form__bottom
-                  .reg-bottom__left
-                    .reg-bottom__text * In future you will be asked for your corporate e-mail adress and password to login this website
-                    label.reg-form__check-block(for="chekCompany")
-                        input.check-input#chekCompany(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check My company already haved account on this website
-                  .reg-bottom__right
-                    button.btn.reg-bottom__next(type="button") Next Step
-          li.reg-item.reg-item--company
+          li.reg-item.reg-item--company.reg-item--error.active
             a.reg-item__link Company info
-            .form-block
-              .error-message You entered incorrect data or did not enter the necessary data
-              form.reg-form
-                .reg-form__top
-                  .reg-form__row
-                    label.reg-form__block(for="")
-                      .reg-form__name Company name #[span.red-star *]
-                      input.reg-form__input(type="text")
-                    label.reg-form__block(for="")
-                      .reg-form__name Adress 1 #[span.red-star *]
-                      input.reg-form__input(type="text")
-                    label.reg-form__block(for="")
-                      .reg-form__name Phone number #[span.red-star *]
-                      input.reg-form__input(type="text")
-                  .reg-form__row
-                    label.reg-form__block(for="")
-                      .reg-form__name Country #[span.red-star *]
-                      input.reg-form__input(type="text")
-                    label.reg-form__block(for="")
-                      .reg-form__name Adress 2 #[span.red-star *]
-                      input.reg-form__input(type="text")
-                    label.reg-form__block(for="")
-                      .reg-form__name Web site #[span.red-star *]
-                      input.reg-form__input(type="text")
-                  .reg-form__row
-                    label.reg-form__block(for="")
-                      .reg-form__name City #[span.red-star *]
-                      input.reg-form__input(type="text")
-                    label.reg-form__block(for="")
-                      .reg-form__name ZIP / Post code #[span.red-star *]
-                      input.reg-form__input(type="text")
-                    label.reg-form__block(for="")
-                      .reg-form__name Number of vessels #[span.red-star *]
-                      input.reg-form__input(type="text")
-                .reg-form__center
-                  .reg-form__title Choose types of your vessels
-                  .reg-form__check
-                    .reg-form__col
-                      label.reg-form__check-block(for="chekInput1")
-                        input.check-input#chekInput1(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Bardes
-                      label.reg-form__check-block(for="chekInput2")
-                        input.check-input#chekInput2(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Chemical Carriers
-                      label.reg-form__check-block(for="chekInput3")
-                        input.check-input#chekInput3(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Container liner
-                      label.reg-form__check-block(for="chekInput4")
-                        input.check-input#chekInput4(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check FPSO
-                      label.reg-form__check-block(for="chekInput5")
-                        input.check-input#chekInput5(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Heavy lift
-                    .reg-form__col
-                      label.reg-form__check-block(for="chekInput6")
-                        input.check-input#chekInput6(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check LPG
-                      label.reg-form__check-block(for="chekInput7")
-                        input.check-input#chekInput7(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Refer
-                      label.reg-form__check-block(for="chekInput8")
-                        input.check-input#chekInput8(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Seismic
-                      label.reg-form__check-block(for="chekInput9")
-                        input.check-input#chekInput9(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Coastal
-                      label.reg-form__check-block(for="chekInput10")
-                        input.check-input#chekInput10(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Cruise
-                    .reg-form__col
-                      label.reg-form__check-block(for="chekInput11")
-                        input.check-input#chekInput11(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Ferries
-                      label.reg-form__check-block(for="chekInput12")
-                        input.check-input#chekInput12(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Hospital Ship
-                      label.reg-form__check-block(for="chekInput13")
-                        input.check-input#chekInput13(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check OSV
-                      label.reg-form__check-block(for="chekInput14")
-                        input.check-input#chekInput14(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Reserch
-                      label.reg-form__check-block(for="chekInput15")
-                        input.check-input#chekInput15(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Speciality
-                    .reg-form__col
-                      label.reg-form__check-block(for="chekInput16")
-                        input.check-input#chekInput16(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Tugboat
-                      label.reg-form__check-block(for="chekInput17")
-                        input.check-input#chekInput17(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Car carrier
-                      label.reg-form__check-block(for="chekInput18")
-                        input.check-input#chekInput18(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Container feeder
-                      label.reg-form__check-block(for="chekInput19")
-                        input.check-input#chekInput19(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check General Cargo
-                      label.reg-form__check-block(for="chekInput20")
-                        input.check-input#chekInput20(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check LNG
-                    .reg-form__col
-                      label.reg-form__check-block(for="chekInput21")
-                        input.check-input#chekInput21(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Offshore drilling rigs
-                      label.reg-form__check-block(for="chekInput22")
-                        input.check-input#chekInput22(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check RoRo
-                      label.reg-form__check-block(for="chekInput23")
-                        input.check-input#chekInput23(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Tankers
-                      label.reg-form__check-block(for="chekInput24")
-                        input.check-input#chekInput24(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check Yatcht
-                .reg-form__bottom
-                  .reg-bottom__left
-                    label.reg-form__check-block(for="chekPolicy")
-                        input.check-input#chekPolicy(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check I have read and agree with terms of use and privacy policy
-                    label.reg-form__check-block(for="chekEmail")
-                        input.check-input#chekEmail(type="checkbox")
-                        .input-my-checkbox
-                        .reg-form__name.reg-form__name--check I want to receive all the latest news from ROPIT by e-mail
-                  .reg-bottom__right.reg-bottom__right--double
-                    button.btn.btn-grey.reg-bottom__back(type="button") Previous Step
-                    button.btn.btn-blue(type="button") Register me
-          .form-content
+        .form-content
+          .form-block.form-block--user.active 
+            .error-message You entered incorrect data or did not enter the necessary data
+            .reg-form__top.reg-form__top--flex
+              .reg-form__col
+                label.reg-form__block(for="")
+                  .reg-form__name Title #[span.red-star *]
+                  select.form-user__select(name="userTitle" value="")
+                      //- option.form-user__option(selected) 
+                      option.form-user__option MR
+                      option.form-user__option MS
+                      option.form-user__option MISS
+                      option.form-user__option MRS
+                      option.form-user__option DR
+                      option.form-user__option CPTN
+                      option.form-user__option PROF
+                label.reg-form__block(for="")
+                  .reg-form__name First Name #[span.red-star *]
+                  input.reg-form__input.reg-form__input--error(type="text")
+                label.reg-form__block(for="")
+                  .reg-form__name Last Name #[span.red-star *]
+                  input.reg-form__input(type="text")
+              .reg-form__col
+                label.reg-form__block(for="")
+                  .reg-form__name E-mail #[span.red-star *]
+                  input.reg-form__input(type="text")
+                label.reg-form__block(for="")
+                  .reg-form__name Password #[span.red-star *]
+                  .reg-form__input-block
+                    input.reg-form__input(type="text")
+                    .reg-form__prompt **Your password must be at least 6 characters and should ideally include both letters and numbers
+                label.reg-form__block(for="")
+                  .reg-form__name Confirm Password #[span.red-star *]
+                  .reg-form__input-block
+                    input.reg-form__input(type="text")
+                    .reg-form__prompt **Please confirm your password by entering it again
+              .reg-form__col
+                label.reg-form__block(for="")
+                  .reg-form__name Type of profile #[span.red-star *]
+                  select.form-user__select(name="typeProfile" value="")
+                    //- option.form-user__option(selected) 
+                    option.form-user__option Profile 1
+                    option.form-user__option Profile 2
+                    option.form-user__option Profile 3
+                    option.form-user__option Profile 4
+            .reg-form__bottom
+                .reg-bottom__left
+                  .reg-bottom__text * In future you will be asked for your corporate e-mail adress and password to login this website
+                  label.reg-form__check-block(for="chekCompany")
+                      input.check-input#chekCompany(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check My company already haved account on this website
+                .reg-bottom__right
+                  button.btn.reg-bottom__next(type="button") Next Step
+          .form-block.form-block--company
+            .error-message You entered incorrect data or did not enter the necessary data
+            form.reg-form
+              .reg-form__top
+                .reg-form__row
+                  label.reg-form__block(for="")
+                    .reg-form__name Company name #[span.red-star *]
+                    input.reg-form__input(type="text")
+                  label.reg-form__block(for="")
+                    .reg-form__name Adress 1 #[span.red-star *]
+                    input.reg-form__input(type="text")
+                  label.reg-form__block(for="")
+                    .reg-form__name Phone number #[span.red-star *]
+                    input.reg-form__input(type="text")
+                .reg-form__row
+                  label.reg-form__block(for="")
+                    .reg-form__name Country #[span.red-star *]
+                    input.reg-form__input(type="text")
+                  label.reg-form__block(for="")
+                    .reg-form__name Adress 2 #[span.red-star *]
+                    input.reg-form__input(type="text")
+                  label.reg-form__block(for="")
+                    .reg-form__name Web site #[span.red-star *]
+                    input.reg-form__input(type="text")
+                .reg-form__row
+                  label.reg-form__block(for="")
+                    .reg-form__name City #[span.red-star *]
+                    input.reg-form__input(type="text")
+                  label.reg-form__block(for="")
+                    .reg-form__name ZIP / Post code #[span.red-star *]
+                    input.reg-form__input(type="text")
+                  label.reg-form__block(for="")
+                    .reg-form__name Number of vessels #[span.red-star *]
+                    input.reg-form__input(type="text")
+              .reg-form__center
+                .reg-form__title Choose types of your vessels
+                .reg-form__check
+                  .reg-form__col
+                    label.reg-form__check-block(for="chekInput1")
+                      input.check-input#chekInput1(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Bardes
+                    label.reg-form__check-block(for="chekInput2")
+                      input.check-input#chekInput2(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Chemical Carriers
+                    label.reg-form__check-block(for="chekInput3")
+                      input.check-input#chekInput3(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Container liner
+                    label.reg-form__check-block(for="chekInput4")
+                      input.check-input#chekInput4(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check FPSO
+                    label.reg-form__check-block(for="chekInput5")
+                      input.check-input#chekInput5(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Heavy lift
+                  .reg-form__col
+                    label.reg-form__check-block(for="chekInput6")
+                      input.check-input#chekInput6(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check LPG
+                    label.reg-form__check-block(for="chekInput7")
+                      input.check-input#chekInput7(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Refer
+                    label.reg-form__check-block(for="chekInput8")
+                      input.check-input#chekInput8(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Seismic
+                    label.reg-form__check-block(for="chekInput9")
+                      input.check-input#chekInput9(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Coastal
+                    label.reg-form__check-block(for="chekInput10")
+                      input.check-input#chekInput10(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Cruise
+                  .reg-form__col
+                    label.reg-form__check-block(for="chekInput11")
+                      input.check-input#chekInput11(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Ferries
+                    label.reg-form__check-block(for="chekInput12")
+                      input.check-input#chekInput12(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Hospital Ship
+                    label.reg-form__check-block(for="chekInput13")
+                      input.check-input#chekInput13(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check OSV
+                    label.reg-form__check-block(for="chekInput14")
+                      input.check-input#chekInput14(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Reserch
+                    label.reg-form__check-block(for="chekInput15")
+                      input.check-input#chekInput15(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Speciality
+                  .reg-form__col
+                    label.reg-form__check-block(for="chekInput16")
+                      input.check-input#chekInput16(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Tugboat
+                    label.reg-form__check-block(for="chekInput17")
+                      input.check-input#chekInput17(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Car carrier
+                    label.reg-form__check-block(for="chekInput18")
+                      input.check-input#chekInput18(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Container feeder
+                    label.reg-form__check-block(for="chekInput19")
+                      input.check-input#chekInput19(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check General Cargo
+                    label.reg-form__check-block(for="chekInput20")
+                      input.check-input#chekInput20(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check LNG
+                  .reg-form__col
+                    label.reg-form__check-block(for="chekInput21")
+                      input.check-input#chekInput21(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Offshore drilling rigs
+                    label.reg-form__check-block(for="chekInput22")
+                      input.check-input#chekInput22(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check RoRo
+                    label.reg-form__check-block(for="chekInput23")
+                      input.check-input#chekInput23(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Tankers
+                    label.reg-form__check-block(for="chekInput24")
+                      input.check-input#chekInput24(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check Yatcht
+              .reg-form__bottom
+                .reg-bottom__left
+                  label.reg-form__check-block(for="chekPolicy")
+                      input.check-input#chekPolicy(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check I have read and agree with terms of use and privacy policy
+                  label.reg-form__check-block(for="chekEmail")
+                      input.check-input#chekEmail(type="checkbox")
+                      .input-my-checkbox
+                      .reg-form__name.reg-form__name--check I want to receive all the latest news from ROPIT by e-mail
+                .reg-bottom__right.reg-bottom__right--double
+                  button.btn.btn-grey.reg-bottom__back(type="button") Previous Step
+                  button.btn.btn-blue(type="button") Register me
 
+        
 
 

@@ -79,7 +79,7 @@ $(document).ready(function(){
 		asideShow();
 
 
-		// Рассчет высоты формы регистрации и переходы
+		// // Форма регистрации, переходы
 		function formBlockHeight() {
 			var 	formBlock = document.querySelectorAll('.form-block'),
 						regSection = document.querySelector('.reg-section'),
@@ -87,26 +87,32 @@ $(document).ready(function(){
 						btnBack = document.querySelector('.reg-bottom__back'),
 						regItemUser = document.querySelector('.reg-item--user'),
 						regItemCompany = document.querySelector('.reg-item--company'),
+						formBlockUser  = document.querySelector('.form-block--user'),
+						formBlockCompany  = document.querySelector('.form-block--company'),
 						maxHeight = 0;
 		
-			for(var i = 0; i < formBlock.length; i++){
+			// for(var i = 0; i < formBlock.length; i++){
 				
-				var elemHeight = formBlock[i].offsetHeight;
-				if(elemHeight > maxHeight){
-					maxHeight = elemHeight + 200;
-				}
-			}
+			// 	var elemHeight = formBlock[i].offsetHeight;
+			// 	if(elemHeight > maxHeight){
+			// 		maxHeight = elemHeight + 200;
+			// 	}
+			// }
 
-			regSection.style.height = maxHeight + 'px';
+			// regSection.style.height = maxHeight + 'px';
 			
 			btnNext.addEventListener('click', () => {
 				regItemUser.classList.remove('active');
 				regItemCompany.classList.add('active');
+				formBlockUser.classList.remove('active');
+				formBlockCompany.classList.add('active');
 			});
 
 			btnBack.addEventListener('click', ()=>{
 				regItemCompany.classList.remove('active');
 				regItemUser.classList.add('active');
+				formBlockUser.classList.add('active');
+				formBlockCompany.classList.remove('active');
 			});
 			
 		}

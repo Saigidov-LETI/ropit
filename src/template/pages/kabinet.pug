@@ -11,17 +11,17 @@ block content
           span.aside-burger__line
       ul.aside__list
         li.aside__item 
-          a.aside__link 
+          a.aside__link #[span.aside__value.aside__value--red 2]
             |  Orders 
             svg.aside__svg
               use(xlink:href="images/icons/sprite.svg#note") 
           ul.aside__sublist
             li.aside__subitem 
-              a.aside__sublink.aside__sublink--active Inbox
+              a.aside__sublink.aside__sublink--active #[span.aside__value.aside__value--blue 2] Inbox
             li.aside__subitem 
-              a.aside__sublink Important
+              a.aside__sublink #[span.aside__value.aside__value--green 1] Important
             li.aside__subitem 
-              a.aside__sublink Fraft
+              a.aside__sublink #[span.aside__value.aside__value--violet 3] Fraft
             li.aside__subitem 
               a.aside__sublink Sent
             li.aside__subitem 
@@ -52,53 +52,104 @@ block content
           ul.control-list
             li.control-item
               a.control-link
+                .control-link__tooltip Unread message
+                svg.control-link__svg
+                  use(xlink:href="images/icons/sprite.svg#printer") 
             li.control-item
               a.control-link
+                .control-link__tooltip Unread message
+                svg.control-link__svg.control-link__svg--arrow-left
+                  use(xlink:href="images/icons/sprite.svg#rightArrow") 
             li.control-item
               a.control-link
+                .control-link__tooltip Unread message
+                svg.control-link__svg
+                  use(xlink:href="images/icons/sprite.svg#rightArrow") 
             li.control-item
               a.control-link
+                .control-link__tooltip Unread message
+                svg.control-link__svg
+                  use(xlink:href="images/icons/sprite.svg#update-arrows") 
             li.control-item
               a.control-link
+                .control-link__tooltip Unread message
+                svg.control-link__svg
+                  use(xlink:href="images/icons/sprite.svg#message") 
             li.control-item
               a.control-link
+                .control-link__tooltip Unread message
+                svg.control-link__svg
+                  use(xlink:href="images/icons/sprite.svg#exclamation") 
         .application-top__user
           .person
             .person__content
-              .person__name
-              .person__company
+              .person__name Henry Stuart #[span.person__name-type (Buyer / Supplier)]
+              .person__company Company name: #[span.person__company-name Ropit]
             .person__avatar
-              img.person__img(src="")
+              img.person__img(src="images/content/user.png" alt='Avatar image')
       .application-bottom
         .direction
           .filter
-            .filter__item All orders
-            .filter__item Open orders
-          .search
+            .filter__item 
+              select.select(name="" value="")
+                option.select__option All orders
+                option.select__option Profile 2
+                option.select__option Profile 3
+                option.select__option Profile 4
+            .filter__item
+              select.select(name="" value="")
+                option.select__option Open orders
+                option.select__option Profile 2
+                option.select__option Profile 3
+                option.select__option Profile 4
+          .search-block
             input.search__input(type="text")
             button.btn Search
         .bid
+          .bid-head
+            .bid-head__import 
+            .bid-head__status Status
+            .bid-head__rfq RFQ 
+            .bid-head__subject Subject
+            .bid-head__vessel Vessel / Object
+            .bid-head__buyer Buyer
+            .bid-head__customer Customer
+            .bid-head__date-block Date
           .bid-item
-            .bid-item__status
-            .bid-item__rfq
-            .bid-item__subject
-            .bid-item__vessel
-            .bid-item__buyer
-            .bid-item__customer
-            .bid-item__date
+            .bid-item__import !
+            .bid-item__status.bid-item__status--blue
+            .bid-item__rfq YFBSya23r32R
+            .bid-item__subject ENG-STEAM VALVE-656Jfna
+            .bid-item__vessel Express V
+            .bid-item__buyer SSGY
+            .bid-item__customer SSGY-costomer
+            .bid-item__date-block
+              span.bid-item__date 2/12/18
+              span.bid-item__time 3:08
+              span.bid-item__meridiem PM
           .bid-item
-            .bid-item__status
-            .bid-item__rfq
-            .bid-item__subject
-            .bid-item__vessel
-            .bid-item__buyer
-            .bid-item__customer
-            .bid-item__date
+            .bid-item__import !
+            .bid-item__status.bid-item__status--green
+            .bid-item__rfq YFBSya23r32R
+            .bid-item__subject ENG-STEAM VALVE-656Jfna
+            .bid-item__vessel Express V
+            .bid-item__buyer SSGY
+            .bid-item__customer SSGY-costomer
+            .bid-item__date-block
+              span.bid-item__date 2/12/18
+              span.bid-item__time 3:08
+              span.bid-item__meridiem PM
           .bid-item
-            .bid-item__status
-            .bid-item__rfq
-            .bid-item__subject
-            .bid-item__vessel
-            .bid-item__buyer
-            .bid-item__customer
-            .bid-item__date
+            .bid-item__import !
+            .bid-item__status.bid-item__status--red
+            .bid-item__rfq YFBSya23r32R
+            .bid-item__subject ENG-STEAM VALVE-656Jfna
+            .bid-item__vessel Express V
+            .bid-item__buyer SSGY
+            .bid-item__customer SSGY-costomer
+            .bid-item__date-block
+              span.bid-item__date 2/12/18
+              span.bid-item__time 3:08
+              span.bid-item__meridiem PM
+          
+  

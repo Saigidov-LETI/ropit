@@ -1,20 +1,24 @@
 .personal-area {
   display: flex;
+  border-bottom: 4px solid #3a75c6;
 }
 
 .aside {
   background-color: $darkBlue;
   max-width: rem(70px);
-  height: 100%;
+  height: 90vh;    
+  border-right: 1px solid #3a75c6;
   .aside__list {
     opacity: 0;
     width: 0;
+    display: none;
   }
   &.aside--active{
-    max-width: rem(150px);
+    min-width: rem(200px);
     .aside__list {
       opacity: 1;
       width: auto;
+      display: block;
     }
   }
 }
@@ -87,9 +91,8 @@
   &:hover{
     background-color: $blue;
     transition: all .3s;
-  }
-  
- }
+  } 
+}
 
 .aside__svg {
   position: absolute;
@@ -98,7 +101,7 @@
   width: rem(25px);
   height: rem(30px);
   fill: #fff;
- }
+}
  
 .aside__sublist {
   text-align: right;
@@ -112,6 +115,7 @@
   border: 1px solid #2d2d4f;
   border-left: none;
   border-right: none;
+  transition: all .3s;
   &.aside__sublink--active  {
     &::after {
       content: '';
@@ -124,4 +128,277 @@
       height: 100%;
     }
   }
- }
+  &:hover{
+    background-color: $blue;
+    transition: all .3s;
+  }
+}
+
+.aside__value {
+  border-radius: 50%;
+  padding: rem(2px) rem(8px);
+  line-height: 1;
+  @include font-size(11px);
+  font-weight: 700;
+  margin-right: 5px;
+  &--blue {
+    background-color: #7aa3db;
+  }
+  &--green {
+    background-color: #aedb7a;
+  }
+  &--violet {
+    background-color: #6767b9;
+  }
+  &--red {
+    background-color: $red;
+  }
+}
+
+.application {
+  width: 100%;
+  background-color: $grey;
+}
+
+.application-top {
+  display: flex;
+  padding: rem(10px) rem(20px);
+  background-color: $darkBlue;
+}
+
+.application-top__control {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.control-list {
+  display: flex;
+}
+
+.control-link {
+  padding: 0 rem(5px);
+  position: relative;
+  &:hover {
+    .control-link__tooltip {
+      opacity: 1;
+      left: -2px;
+      transition: all .3s;
+    }
+  }
+}
+
+.control-link__tooltip {
+  position: absolute;
+  opacity: 0;
+  bottom: calc(100% + 7px);
+  background-color: $white;
+  border-radius: 3px;
+  padding:2px 3px;
+  @include font-size(10px);
+  color: $darkBlue;
+  left: -9999999px;
+  min-width: 90px;
+  text-align: center;
+  transition: all .3s;
+  &::after {
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 10px;
+    border: 7px solid transparent;
+    border-top: 7px solid $white;
+  }
+}
+ 
+.control-link__svg {
+  fill: $white;
+  width: rem(20px);
+  height: rem(20px);
+  transition: all .3s;
+  &:hover {
+    fill: $blue;
+    transition: all .3s;
+  }
+}
+
+.control-link__svg--arrow-left {
+  transform: rotate(180deg);
+}
+
+.application-top__user {
+  width: 60%;
+}
+
+.person {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.person__content {
+  padding: 0 10px;
+}
+
+.person__name {
+  color: $white;
+}
+
+.person__name-type {
+  color: $blue;
+  @include font-size(13px);
+}
+
+.person__company {
+  color: $blue;
+  @include font-size(15px);
+}
+
+.person__company-name {
+  color: $white;
+}
+
+.person__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.person__img {
+  max-width: rem(40px);
+}
+
+.application-bottom {
+  
+}
+
+.direction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(10px) rem(20px);
+}
+
+.filter {
+  width: 60%;
+  display: flex;
+}
+
+.filter__item {
+  margin-right: rem(15px)
+}
+
+.select {
+  border: 1px solid transparent;
+  padding: rem(10px) rem(15px);
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: $darkGrey;
+}
+
+.select__option {
+
+}
+
+.search-block {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  .btn {
+    margin: 0 rem(10px)
+  }
+}
+
+.search__input {
+ margin: 0 rem(10px);
+ padding: rem(10px) rem(15px);
+ border-radius: 3px;
+ border: 1px solid #7aa3db;
+}
+
+.bid {
+  padding: rem(10px) rem(20px);
+}
+
+.bid-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: rem(5px) rem(10px);
+  @include font-size(12px);
+  border-radius: 3px;
+  margin-bottom: rem(5px);
+}
+
+.bid-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include font-size(12px);
+  margin-bottom: rem(5px);
+}
+
+.bid-item__import {
+  padding: 0 rem(10px);
+  font-weight: 700;
+  @include font-size(18px);
+  color: $red;
+}
+
+.bid-item__status {
+  height: rem(12px);
+  width: rem(12px);
+  border-radius: 50%;
+  margin: 0 rem(20px) 0 rem(10px);
+  &--blue {
+    background-color: #7aa3db;
+  }
+  &--green {
+    background-color: #aedb7a;
+  }
+  &--violet {
+    background-color: #6767b9;
+  }
+  &--red {
+    background-color: $red;
+  }
+}
+
+.bid-item__rfq,
+.bid-item__subject,
+.bid-item__vessel,
+.bid-item__buyer,
+.bid-item__customer,
+.bid-item__date-block{
+  flex: 1;
+  padding: 0 rem(10px);
+  text-align: center;
+}
+
+.bid-head__status {
+  background-color: #7aa3db;
+  border-radius: 3px;
+  color: $white;
+  padding: rem(5px) rem(15px);
+  margin: 0 rem(5px) 0 0;
+}
+
+.bid-head__rfq,
+.bid-head__subject,
+.bid-head__vessel,
+.bid-head__buyer,
+.bid-head__customer,
+.bid-head__date-block{
+  flex: 1;
+  padding: rem(5px) rem(10px);
+  margin: 0 rem(5px);
+  text-align: center;
+  background-color: #7aa3db;
+  border-radius: 3px;
+  color: $white;
+}
+
+.bid-head__date-block{
+  margin-right: 0;
+}

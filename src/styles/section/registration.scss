@@ -42,10 +42,14 @@
   opacity: 0;
   width: 100%;
   position: absolute;
-  top: 100%;
   left: 9999999px;
   background-color: #eef1ff;
   padding: rem(25px) rem(35px);
+  &.active {
+    position: relative;
+    opacity: 1;
+    left:0;
+  }
 }
 .error-message {
   display: none;
@@ -149,6 +153,7 @@
   border: 1px solid $darkBlue;
   position: relative;
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .check-input:checked + .input-my-checkbox:after{
@@ -220,15 +225,15 @@
   padding-top: rem(15px);
 }
 
-// .reg-bottom__left {
-//   flex: 1;
-// }
-
 .reg-bottom__right {
   display: flex;
   &.reg-bottom__right--double {
     width: 35%;
     justify-content: space-between;
+  }
+  .btn {
+    margin: 0 5px;
+    padding:rem(10px) rem(20px);
   }
 }
 
