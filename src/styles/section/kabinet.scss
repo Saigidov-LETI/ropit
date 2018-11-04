@@ -339,8 +339,15 @@
   margin-bottom: rem(5px);
 }
 
+.bid-item__status-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right:rem(15px);
+  min-width: rem(50px);
+}
+
 .bid-item__import {
-  padding: 0 rem(10px);
   font-weight: 700;
   @include font-size(18px);
   color: $red;
