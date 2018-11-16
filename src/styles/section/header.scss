@@ -68,6 +68,17 @@
   }
 }
 
+.btn-log {
+  padding: rem(5px) rem(10px);
+  background-color: $darkBlue;
+  color: $white;
+  transition: backgroun-color .3s;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
 .nav-drop__list {
   position: absolute;
   left: 0;

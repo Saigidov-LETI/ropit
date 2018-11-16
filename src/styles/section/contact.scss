@@ -1,0 +1,83 @@
+.contact-section {
+  padding: 3% 0;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact__left {
+  width: 70%;
+}
+
+.contact-decription {
+  font-family: 'ProximaNova';
+  font-weight: 500;
+  @include font-size(20px);
+  color: $darkBlue;
+  margin-bottom: rem(15px);
+}
+
+.contact-adress {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(20px);
+}
+
+.contact-text {
+  padding-left: rem(20px);
+  font-family: 'ProximaNova';
+  font-weight: 500;
+  @include font-size(20px);
+  color: $darkBlue;
+}
+
+.contact-tel {
+  display: flex;
+  margin-bottom: rem(20px);
+}
+
+.contact-mail {
+  display: flex;
+  margin-bottom: rem(20px);
+}
+
+.contact-svg {
+  fill: $darkBlue;
+  max-width: rem(25px);
+  max-height: rem(30px);
+}
+
+.contact__right {
+  width: 30%
+}
+
+.map__form {
+  background-color: $grey;
+  border-radius: 5px;
+  padding: rem(15px) rem(20px);
+}
+
+.map__form .reg-form__input {
+  border-radius: 3px;
+}
+
+.contact-form__top {
+  padding-bottom:rem(10px);
+  border-bottom: 2px solid $white;
+}
+
+.contact-form__top .reg-form__block {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-form__check {
+  padding: rem(10px) 0;
+}
+
+.contact-form__send {
+  display: flex;
+  justify-content: flex-end;
+  padding: rem(10px) 0;
+}

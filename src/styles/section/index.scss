@@ -1,8 +1,8 @@
 .first {
-  background-image: url("../images/bg/bg-1.png");
-  background-size: cover;
+  background-image: url("../images/bg/bg-3.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  padding: 7% 10%;
+  padding: 10% 10% 20%;
   position: relative;
   z-index: -1;
   &::after {
@@ -12,7 +12,7 @@
     bottom:0;
     right:0;
     left:0;
-    background-color: $darkBlue;
+    background-color: #000;
     opacity: .6;
     z-index: -1;
   }
@@ -22,8 +22,9 @@
 }
 
 .first-block {
-  width: 45%;
+  width: 100%;
   z-index: 10;
+  text-align: center;
   @include tablets {
     width:85%;
   }
@@ -33,7 +34,7 @@
 }
 
 .first-block__title {
-  @include font-size(34px);
+  @include font-size(55px);
   font-family: 'ProximaNova';
   font-weight: 700;
   margin-bottom: rem(10px);
@@ -41,7 +42,7 @@
 }
 
 .first-block__content {
-  @include font-size(24px);
+  @include font-size(35px);
   font-family: 'ProximaNova';
   font-weight: 500;
   color: $white;
@@ -94,7 +95,7 @@
 }
 
 .prod-block__prodone {
-  background-image: url("../images/bg/bg-2.png");
+  background-image: url("../images/bg/bg-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -115,7 +116,8 @@
   color: $white;
   @include font-size(48px);
   font-family: 'ProximaNova';
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 3%;
   @include phones {
@@ -134,7 +136,7 @@
     bottom:0;
     right:0;
     left:0;
-    background-color: $darkBlue;
+    background-color: #000;
     opacity: .6;
     z-index: -1;
   }

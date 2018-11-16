@@ -20,7 +20,7 @@
               <nav class="nav container">
                 <nav class="nav">
                   <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link nav__link-active" href="#">Buyer</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Buyer</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Supplier</a>
                       <ul class="nav-drop__list">
                         <li class="nav-drop__item"><a class="nav-drop__link" href="#"><span class="nav-drop__arrow">>></span> Something about ROPIT</a></li>
@@ -37,9 +37,7 @@
                 </nav>
               </nav>
             </div>
-            <div class="header-block__btn">
-              <button class="btn btn-sign">Sign in</button>
-            </div>
+            <div class="header-block__btn"><a class="btn btn-sign" href="">Sign in</a></div>
           </div>
         </header>
       </div>
@@ -51,81 +49,83 @@
               <li class="reg-item reg-item--user reg-item--error active"><a class="reg-item__link">User info</a></li>
               <li class="reg-item reg-item--company reg-item--error active"><a class="reg-item__link">Company info</a></li>
             </ul>
-            <div class="form-content">
+            <form class="form-content">
               <div class="form-block form-block--user active"> 
                 <div class="error-message">You entered incorrect data or did not enter the necessary data</div>
-                <div class="reg-form__top reg-form__top--flex">
-                  <div class="reg-form__col">
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">Title <span class="red-star">*</span></div>
-                      <select class="form-user__select" name="userTitle" value="">
-                        <option class="form-user__option">MR</option>
-                        <option class="form-user__option">MS</option>
-                        <option class="form-user__option">MISS</option>
-                        <option class="form-user__option">MRS</option>
-                        <option class="form-user__option">DR</option>
-                        <option class="form-user__option">CPTN</option>
-                        <option class="form-user__option">PROF</option>
-                      </select>
-                    </label>
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">First Name <span class="red-star">*</span></div>
-                      <input class="reg-form__input reg-form__input--error" type="text">
-                    </label>
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">Last Name <span class="red-star">*</span></div>
-                      <input class="reg-form__input" type="text">
-                    </label>
-                  </div>
-                  <div class="reg-form__col">
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">E-mail <span class="red-star">*</span></div>
-                      <input class="reg-form__input" type="text">
-                    </label>
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">Password <span class="red-star">*</span></div>
-                      <div class="reg-form__input-block">
+                <div class="reg-form">
+                  <div class="reg-form__top reg-form__top--flex">
+                    <div class="reg-form__col">
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">Title <span class="red-star">*</span></div>
+                        <select class="form-user__select" name="userTitle" value="">
+                          <option class="form-user__option">MR</option>
+                          <option class="form-user__option">MS</option>
+                          <option class="form-user__option">MISS</option>
+                          <option class="form-user__option">MRS</option>
+                          <option class="form-user__option">DR</option>
+                          <option class="form-user__option">CPTN</option>
+                          <option class="form-user__option">PROF</option>
+                        </select>
+                      </label>
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">First Name <span class="red-star">*</span></div>
+                        <input class="reg-form__input reg-form__input--error" type="text">
+                      </label>
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">Last Name <span class="red-star">*</span></div>
                         <input class="reg-form__input" type="text">
-                        <div class="reg-form__prompt">**Your password must be at least 6 characters and should ideally include both letters and numbers</div>
-                      </div>
-                    </label>
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">Confirm Password <span class="red-star">*</span></div>
-                      <div class="reg-form__input-block">
+                      </label>
+                    </div>
+                    <div class="reg-form__col">
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">E-mail <span class="red-star">*</span></div>
                         <input class="reg-form__input" type="text">
-                        <div class="reg-form__prompt">**Please confirm your password by entering it again</div>
-                      </div>
-                    </label>
+                      </label>
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">Password <span class="red-star">*</span></div>
+                        <div class="reg-form__input-block">
+                          <input class="reg-form__input" type="text">
+                          <div class="reg-form__prompt">**Your password must be at least 6 characters and should ideally include both letters and numbers</div>
+                        </div>
+                      </label>
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">Confirm Password <span class="red-star">*</span></div>
+                        <div class="reg-form__input-block">
+                          <input class="reg-form__input" type="text">
+                          <div class="reg-form__prompt">**Please confirm your password by entering it again</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="reg-form__col">
+                      <label class="reg-form__block" for="">
+                        <div class="reg-form__name">Type of profile <span class="red-star">*</span></div>
+                        <select class="form-user__select" name="typeProfile" value="">
+                          <option class="form-user__option">Profile 1</option>
+                          <option class="form-user__option">Profile 2</option>
+                          <option class="form-user__option">Profile 3</option>
+                          <option class="form-user__option">Profile 4</option>
+                        </select>
+                      </label>
+                    </div>
                   </div>
-                  <div class="reg-form__col">
-                    <label class="reg-form__block" for="">
-                      <div class="reg-form__name">Type of profile <span class="red-star">*</span></div>
-                      <select class="form-user__select" name="typeProfile" value="">
-                        <option class="form-user__option">Profile 1</option>
-                        <option class="form-user__option">Profile 2</option>
-                        <option class="form-user__option">Profile 3</option>
-                        <option class="form-user__option">Profile 4</option>
-                      </select>
-                    </label>
-                  </div>
-                </div>
-                <div class="reg-form__bottom">
-                  <div class="reg-bottom__left">
-                    <div class="reg-bottom__text">* In future you will be asked for your corporate e-mail adress and password to login this website</div>
-                    <label class="reg-form__check-block" for="chekCompany">
-                      <input class="check-input" id="chekCompany" type="checkbox">
-                      <div class="input-my-checkbox"></div>
-                      <div class="reg-form__name reg-form__name--check">My company already haved account on this website</div>
-                    </label>
-                  </div>
-                  <div class="reg-bottom__right">
-                    <button class="btn reg-bottom__next" type="button">Next Step</button>
+                  <div class="reg-form__bottom">
+                    <div class="reg-bottom__left">
+                      <div class="reg-bottom__text">* In future you will be asked for your corporate e-mail adress and password to login this website</div>
+                      <label class="reg-form__check-block" for="chekCompany">
+                        <input class="check-input" id="chekCompany" type="checkbox">
+                        <div class="input-my-checkbox"></div>
+                        <div class="reg-form__name reg-form__name--check">My company already haved account on this website</div>
+                      </label>
+                    </div>
+                    <div class="reg-bottom__right">
+                      <button class="btn reg-bottom__next" type="button">Next Step  </button>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="form-block form-block--company">
                 <div class="error-message">You entered incorrect data or did not enter the necessary data</div>
-                <form class="reg-form">
+                <div class="reg-form">
                   <div class="reg-form__top">
                     <div class="reg-form__row">
                       <label class="reg-form__block" for="">
@@ -323,9 +323,9 @@
                       <button class="btn btn-blue" type="button">Register me</button>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </section>

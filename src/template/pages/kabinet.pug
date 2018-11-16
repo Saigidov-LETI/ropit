@@ -12,38 +12,44 @@ block content
       ul.aside__list
         li.aside__item 
           a.aside__link #[span.aside__value.aside__value--red 2]
-            |  Orders 
+            span.aside__text Orders 
             svg.aside__svg
               use(xlink:href="images/icons/sprite.svg#note") 
           ul.aside__sublist
             li.aside__subitem 
-              a.aside__sublink.aside__sublink--active #[span.aside__value.aside__value--blue 2] Inbox
+              a.aside__sublink.aside__sublink--active 
+                span.aside__value.aside__value--blue 2
+                span.aside__text Inbox
             li.aside__subitem 
-              a.aside__sublink #[span.aside__value.aside__value--green 1] Important
+              a.aside__sublink 
+                span.aside__value.aside__value--green 1
+                span.aside__text Important
             li.aside__subitem 
-              a.aside__sublink #[span.aside__value.aside__value--violet 3] Fraft
+              a.aside__sublink 
+                span.aside__value.aside__value--violet 3
+                span.aside__text Fraft
             li.aside__subitem 
               a.aside__sublink Sent
             li.aside__subitem 
               a.aside__sublink All post
         li.aside__item 
           a.aside__link 
-            | Catalogs
+            span.aside__text Catalogs
             svg.aside__svg
               use(xlink:href="images/icons/sprite.svg#note") 
         li.aside__item 
           a.aside__link 
-            | Menu
+            span.aside__text Menu
             svg.aside__svg
               use(xlink:href="images/icons/sprite.svg#note") 
         li.aside__item 
           a.aside__link 
-            | Menu
+            span.aside__text Menu
             svg.aside__svg
               use(xlink:href="images/icons/sprite.svg#note") 
         li.aside__item 
           a.aside__link
-            | Settings
+            span.aside__text Settings
             svg.aside__svg
               use(xlink:href="images/icons/sprite.svg#settings") 
     .application

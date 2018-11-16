@@ -1,14 +1,18 @@
 .main-wrapper {
   min-height: 100%;
   position: relative;
-  padding-bottom: rem(251px);
   overflow: hidden;
+  padding-bottom: rem(251px);
   @include tablets {
-    padding-bottom: rem(236px);
-   }
+    .main-wrapper {
+      padding-bottom: rem(232px);
+    }
+  }
   @include phones {
-    padding-bottom: rem(180px);
-   }
+    .main-wrapper {
+      padding-bottom: rem(180px);
+    }
+  }
 }
 
 .container {

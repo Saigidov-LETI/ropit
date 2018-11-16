@@ -1,0 +1,63 @@
+extends ../loyout
+
+block variables
+    - var title= "Контакты"
+
+block content
+  section.contact-section
+    .container
+      h2.section-title Contact Us
+      .contact
+        .contact__left
+          .contact-content
+            .contact-decription Lorem ipsum lorem ipsum lorem ipsum m lorem ipsum m lorem ipsum 
+            .contact-block
+              .contact-adress
+                svg.contact-svg
+                  use(xlink:href="images/icons/sprite.svg#maps-and-flags") 
+                span.contact-text Lorem ipsum lorem ipsum lorem ipsum m lorem ipsum
+              .contact-tel
+                .contact-tel_icon
+                  svg.contact-svg
+                    use(xlink:href="images/icons/sprite.svg#call-answer") 
+                .contact-tel__item
+                  a.contact-text(href="tel:88000000000") 8 (800) 000 00 00
+                  a.contact-text(href="tel:88009998899") 8 (800) 999 88 99
+              .contact-mail
+                svg.contact-svg
+                      use(xlink:href="images/icons/sprite.svg#close-envelope") 
+                a.contact-text(href="mailto:ropit@ropit.com") ropit@ropit.com
+            .contact-map#map
+        .contact__right
+          form.contact-form
+          .map__form
+            form.contact-form
+              .contact-form__top
+                label.reg-form__block(for='')
+                  .reg-form__name
+                    | E-mail
+                    span.red-star *
+                  input.reg-form__input(type='text')
+                label.reg-form__block(for='')
+                  .reg-form__name
+                    | First Name 
+                    span.red-star *
+                  input.reg-form__input(type='text')
+                label.reg-form__block(for='')
+                  .reg-form__name
+                    | Last Name 
+                    span.red-star *
+                  input.reg-form__input(type='text')
+                label.reg-form__block(for='')
+                  .reg-form__name
+                    | Question 
+                    span.red-star *
+                  textarea.reg-form__input(type='text', name='message', rows='6', placeholder='Вопрос')
+              .contact-form__bottom
+                .contact-form__check
+                  label.reg-form__check-block(for='checkPolicyContact')
+                    input#checkPolicyContact.check-input(type='checkbox')
+                    .input-my-checkbox
+                    .reg-form__name.reg-form__name--check I agree to the privacy policy
+                .contact-form__send
+                  button.btn(type='button') Send

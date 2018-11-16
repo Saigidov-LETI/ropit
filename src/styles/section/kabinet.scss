@@ -9,9 +9,23 @@
   height: 90vh;    
   border-right: 1px solid #3a75c6;
   .aside__list {
-    opacity: 0;
-    width: 0;
+    // opacity: 0;
+    // width: 0;
+    // display: none;
+  }
+  .aside__text {
+    color: #ffffff;
+    font-size: 14px;
+    font-size: 0.875rem;
+    position: relative;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     display: none;
+  }
+  .aside__link {
+    min-height: 50px;
+    padding: 0;
   }
   &.aside--active{
     min-width: rem(200px);
@@ -19,6 +33,18 @@
       opacity: 1;
       width: auto;
       display: block;
+    }
+    .aside__text {
+      display: block;
+    }
+    .aside__value {
+      display: block 
+    }
+    .aside__sublist {
+      display: block;
+    }
+    .aside__link {
+      padding: rem(15px) rem(60px) rem(15px) rem(20px);
     }
   }
 }
@@ -44,7 +70,7 @@
   display: block;
   width: rem(30px);
   height: 2px;
-  background-color: #2d2d4f;
+  background-color: #8585b9;
   border-radius: 3px;
   margin: rem(10px) 0;
   transition: all .3s;
@@ -55,7 +81,7 @@
     bottom: rem(10px);
     width: 100%;
     height: 2px;
-    background-color: #2d2d4f;
+    background-color: #8585b9;
     border-radius: 3px;
     transition: all .3s;
   }
@@ -65,7 +91,7 @@
     top: rem(10px);
     width: 100%;
     height: 2px;
-    background-color: #2d2d4f;
+    background-color: #8585b9;
     border-radius: 3px;
     transition: all .3s;
   }
@@ -80,6 +106,9 @@
   border-left: none;
   border-right: none;
   transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   &::after {
     content: '';
     position: absolute;
@@ -97,7 +126,6 @@
 .aside__svg {
   position: absolute;
   right: rem(20px);
-  top: rem(12px);
   width: rem(25px);
   height: rem(30px);
   fill: #fff;
@@ -105,6 +133,7 @@
  
 .aside__sublist {
   text-align: right;
+  display: none;
 }
 
 .aside__sublink {
@@ -115,7 +144,9 @@
   border: 1px solid #2d2d4f;
   border-left: none;
   border-right: none;
-  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   &.aside__sublink--active  {
     &::after {
       content: '';
@@ -141,6 +172,7 @@
   @include font-size(11px);
   font-weight: 700;
   margin-right: 5px;
+  display: none;
   &--blue {
     background-color: #7aa3db;
   }
